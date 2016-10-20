@@ -16,6 +16,10 @@ new transaction > action<br />
 </pre>
 <hr />
 
+
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/btcmachine.jpg " alt="btcmachine.jpg " width="650">
+
+
 The new version is using Raspberry Pi and <b>serial display</b> for displaiyng QR code.
 It "retrieves" course (from BITSTAMP), recalculate the amount required (USD to BTC), and it generates QR code,
 after payment is executed events (relays, ...)<br />
