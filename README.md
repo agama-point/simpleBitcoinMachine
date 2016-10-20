@@ -32,9 +32,11 @@ Payment of small amounts => waiting only for new transaction in blockchain...<br
 Next step? LoLin + micropython / or Raspberry Py 3?<br />
 blockchain.info better parse or JSON API<br />
 >> Final machine for dispensing goods or opening doors ;-) Up2U</br>
-
+<br /><br /><br />
 <hr />
-What about BTC donation? ;-)
-<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/qg.png" alt="btc ">
+<br /><br /><br />
+What about BTC donation? ;-)<br /><br />
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/qg.png" alt="btc "><br />
 https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e
+<br /><br /><br />
 
