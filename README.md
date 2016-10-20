@@ -33,4 +33,8 @@ Next step? LoLin + micropython / or Raspberry Py 3?<br />
 blockchain.info better parse or JSON API<br />
 >> Final machine for dispensing goods or opening doors ;-) Up2U</br>
 
+<hr />
+What about BTC donation? ;-)
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/qg.png" alt="btc ">
+https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e
 
