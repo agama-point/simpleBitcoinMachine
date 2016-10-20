@@ -10,7 +10,7 @@ new transaction > action<br />
 #--------------------------------------------
 
 #block-test01 - 2016-09 - main idea
-#<b>block-test02</b> - 2016-10 - "better" HTMLParser
+#<b>block-test02</b> - 2016-10 - alfa - "better" HTMLParser
 #block-test03 - 2016-10 - beta testing the last edition (with display for QR code of transaction)
 
 # is last transaction from blockchain.info today? yes > action
