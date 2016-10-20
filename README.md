@@ -23,7 +23,7 @@ new transaction > action<br />
 The new version is using Raspberry Pi and <b>serial display</b> for displaiyng QR code.
 It "retrieves" course (from BITSTAMP), recalculate the amount required (USD to BTC), and it generates QR code,
 after payment is executed events (relays, ...)<br />
-Payment of small sums = waiting only for new transaction in blocchain...<br />
+Payment of small sums = waiting only for new transaction in blockchain...<br />
 <b>All this takes a few seconds!</b><br />
 <hr />
 Next step? LoLin + micropython / or Raspberry Py 3?<br />
