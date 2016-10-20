@@ -17,7 +17,7 @@ new transaction > action<br />
 <hr />
 
 
-<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/btcmachine.jpg " alt="btcmachine.jpg " width="650">
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/btcmachine.jpg " alt="btcmachine.jpg " width="750">
 
 
 The new version is using Raspberry Pi and <b>serial display</b> for displaiyng QR code.
