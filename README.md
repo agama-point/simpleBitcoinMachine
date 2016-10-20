@@ -11,6 +11,7 @@ new transaction > action<br />
 
 #block-test01 - 2016-09 - main idea
 #block-test02 - 2016-10 - "better" HTMLParser
+#block-test03 - 2016-10 - last edition (display for QR code of transaction / https://github.com/octopusengine/serial-display)
 
 # is last transaction from blockchain.info today? yes > action
 </pre>
