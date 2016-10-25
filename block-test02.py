@@ -7,10 +7,8 @@
 #block-test02 - 2016-10 - "better" HTMLParser
 
 # is last transaction from blockchain.info today? yes > action
-
 #--------------------------------------------
-#toto: https://github.com/blockchain/receive-payments-demos/blob/master/python/receive_demo/views.py  
-
+#toto: https://github.com/blockchain/receive-payments-demos/blob/master/python/receive_demo/views.py 
 #--------------------------------------------
 import urllib
 import time
@@ -37,11 +35,9 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         ## print ":", data
         arrLines.append(data)
-        #if (data =="Total: "):
-        #    print ": >>> ", data
+        #if (data =="Total: "): print ": >>> ", data
 
-parser = MyHTMLParser()
-#test: parser.feed('<html><head><title>Test</title></head><body><h1>Parse me!</h1></body></html>')
+parser = MyHTMLParser() #test: parser.feed('<html><head><title>Test</title></head><body><h1>Parse me!</h1></body></html>')
 
 #---server time--- and parameters...
 print "octopusengine/api --- server time:"
@@ -62,13 +58,6 @@ jObj = json.loads(urllib2.urlopen("https://www.bitstamp.net/api/ticker/").read()
 lastNum =int(float(jObj["last"]))
 print lastNum
 #----------------------
-
-# myDir = "data/"
-# resource = urllib.urlopen("http://www.digimouth.com/news/media/2011/09/google-logo.jpg")
-# output = open(myDir+"file01.jpg","wb")
-# output.write(resource.read())
-# output.close()
-
 resource = urllib.urlopen("https://blockchain.info/unspent?active="+wallAdr+"&format=html")
 blockData = resource.read()
 # print blockData
@@ -97,7 +86,6 @@ for line in arrLines:
        except:    
            noNum=True       
     i=i+1
-
 print "-------------------------------------"
 print "transactions"
 for line in transactions:
@@ -119,10 +107,4 @@ except:
 #print timDate
 if (timDate==traDate):
     print "today is OK"
-
-#--------------------------------------------/end
-    
-    
-
-
-
+#--------------------------------------------/end 
