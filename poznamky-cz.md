@@ -9,9 +9,18 @@ stávající serial display https://github.com/octopusengine/serial-display
 <br />
 <hr />
 <b>Aktuální TODO</b><br>
-1. lepší prasrování blockchainu<br />
-2. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...<br />
-3. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...<br />
+<h3>1. lepší prasrování blockchainu</h3><br />
+návrhy z FB Bitcoinové komunity:
+https://github.com/GENERALBYTESCOM/bitrafael_public/blob/master/bitrafael_common/src/com/generalbytes/bitrafael/api/IBitrafaelBitcoinAPI.java
+
+
+
+
+<h3>2. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...</h3><br />
+
+
+
+<h3>3. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...</h3><br />
 <br/>
 <hr/>
 2016/10 - kratičké video, kde je vidět rychlost vykreslení QR na serialdisplay<br/>
