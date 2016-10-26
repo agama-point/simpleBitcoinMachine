@@ -32,3 +32,12 @@ co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servi
 <hr/>
 2016/10 - kratičké video, kde je vidět rychlost vykreslení QR na serialdisplay<br/>
 https://www.instagram.com/p/BMBZW_qAxMp/?taken-by=octopusengine
+
+
+
+<hr>
+https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e
+http://docs.electrum.org/en/latest/protocol.html
+
+
+
