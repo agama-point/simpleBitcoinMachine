@@ -1,4 +1,4 @@
-Poznámky k dalšímu vývoji:<br />
+<h2>Poznámky k dalšímu vývoji:<h2><br />
 <br />
 Aktuální beta verze (2016/10)<br />
 + běží na <b>Raspberry Pi 2</b> <i>půjde na RPi 3, ale nekompatibilita UART... vyřešeno, neaplikováno</i><br />
