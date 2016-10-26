@@ -52,6 +52,7 @@ http://bitcoin.stackexchange.com/questions/21395/how-can-a-website-detect-when-b
 <br/>
 <br/>
 
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
 
 
