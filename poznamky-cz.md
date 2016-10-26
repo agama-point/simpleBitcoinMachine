@@ -7,6 +7,7 @@ Aktuální beta verze (2016/10)<br />
 <br />
 <br />
 <hr />
+<b>Aktuální TODO</b><br>
 1. lepší prasrování blockchainu<br />
 2. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...<br />
 3. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...<br />
