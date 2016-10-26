@@ -36,8 +36,13 @@ https://www.instagram.com/p/BMBZW_qAxMp/?taken-by=octopusengine
 
 
 <hr>
-https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e
-http://docs.electrum.org/en/latest/protocol.html
+https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e<br/>
+http://docs.electrum.org/en/latest/protocol.html<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
