@@ -8,8 +8,10 @@ stávající serial display https://github.com/octopusengine/serial-display
 <br />
 <br />
 <hr />
-<b>Aktuální TODO</b><br>
-<h3>1. lepší prasrování blockchainu</h3><br />
+<h2>Aktuální TODO:</h2><br>
+<hr />
+<h3>1. lepší prasrování blockchainu</h3>
+
 návrhy z FB Bitcoinové komunity:
 https://github.com/GENERALBYTESCOM/bitrafael_public/blob/master/bitrafael_common/src/com/generalbytes/bitrafael/api/IBitrafaelBitcoinAPI.java
 
