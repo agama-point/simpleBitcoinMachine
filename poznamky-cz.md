@@ -10,7 +10,7 @@ stávající serial display https://github.com/octopusengine/serial-display
 <hr />
 <h2>Aktuální TODO:</h2><br>
 <hr />
-<h3>1. lepší prasrování blockchainu</h3>
+<h3>A. lepší prasrování blockchainu</h3>
 
 návrhy z FB Bitcoinové komunity:<br>
 1) https://blockexplorer.com/api-ref<br>
@@ -19,11 +19,14 @@ návrhy z FB Bitcoinové komunity:<br>
 
 
 
-<h3>2. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...</h3><br />
+<h3>B. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...</h3><br />
+1) tato betaverze je RPi2, musí být na LAN, akce - cvakne relé.. nebo podobně<br>
+2) další verze na WiFi, RPi3 <br>
+3) a otevírá se pole i pro IoT.. zatím na ESP8266<br>
+https://github.com/musdom/BlockThing
 
 
-
-<h3>3. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...</h3><br />
+<h3>C. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...</h3><br />
 <br/>
 <hr/>
 2016/10 - kratičké video, kde je vidět rychlost vykreslení QR na serialdisplay<br/>
