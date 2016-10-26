@@ -13,8 +13,8 @@ stávající serial display https://github.com/octopusengine/serial-display
 <h3>1. lepší prasrování blockchainu</h3>
 
 návrhy z FB Bitcoinové komunity:
-https://blockexplorer.com/api-ref
-https://github.com/GENERALBYTESCOM/bitrafael_public/blob/master/bitrafael_common/src/com/generalbytes/bitrafael/api/IBitrafaelBitcoinAPI.java
+1) https://blockexplorer.com/api-ref<br>
+2) https://github.com/GENERALBYTESCOM/bitrafael_public/blob/master/bitrafael_common/src/com/generalbytes/bitrafael/api/IBitrafaelBitcoinAPI.java<br>
 
 
 
