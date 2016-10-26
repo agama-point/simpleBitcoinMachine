@@ -12,3 +12,7 @@ stávající serial display https://github.com/octopusengine/serial-display
 1. lepší prasrování blockchainu<br />
 2. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...<br />
 3. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...<br />
+<br/>
+<hr/>
+2016/10 - kratičké video, kde je vidět rychlost vykreslení QR na serialdisplay<br/>
+https://www.instagram.com/p/BMBZW_qAxMp/?taken-by=octopusengine
