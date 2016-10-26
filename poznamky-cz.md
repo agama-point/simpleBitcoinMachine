@@ -37,13 +37,21 @@ https://www.instagram.com/p/BMBZW_qAxMp/?taken-by=octopusengine
 
 
 <hr>
+odkaz na FB pprvní publikování
+https://www.facebook.com/photo.php?fbid=1305566566120193&set=gm.584562355062336&type=3&theater<br>
+link na blockchain
 https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e<br/>
+další odkazy
 http://docs.electrum.org/en/latest/protocol.html<br/>
+http://bitcoin.stackexchange.com/questions/20312/detecting-generation-transactions<br/>
+https://blockexplorer.com/api/rawtx/7dea68bf5b470747c1d821ac6e223e0d8ad611f51ddba0de4977834d3aedda02<br/>
+
+http://bitcoin.stackexchange.com/questions/21395/how-can-a-website-detect-when-bitcoins-have-been-deposited<br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
+
 
 
 
