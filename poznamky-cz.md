@@ -37,7 +37,7 @@ https://www.instagram.com/p/BMBZW_qAxMp/?taken-by=octopusengine
 
 
 <hr>
-odkaz na FB pprvní publikování 20. 10. 2016
+odkaz na FB první publikování 20. 10. 2016
 https://www.facebook.com/photo.php?fbid=1305566566120193&set=gm.584562355062336&type=3&theater<br>
 link na blockchain
 https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e<br/>
