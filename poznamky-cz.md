@@ -19,14 +19,16 @@ návrhy z FB Bitcoinové komunity:<br>
 
 
 
-<h3>B. dotáhnout periferie, případná app z mobilu, automaty, zámky, IoT...</h3><br />
+<h3>B. dotáhnout funkční verze a různé periferie</h3>
+případná app z mobilu, platební automaty, zámky, IoT...<br />
 1) tato betaverze je RPi2, musí být na LAN, akce - cvakne relé.. nebo podobně<br>
-2) další verze na WiFi, RPi3 <br>
-3) a otevírá se pole i pro IoT.. zatím na ESP8266<br>
+2) další verze na WiFi, RPi3 - s vazbou na volbu zboží nebo služen <br>
+3) a otevírá se široké pole i pro IoT.. zatím třeba na ESP8266<br>
 https://github.com/musdom/BlockThing
 
 
-<h3>C. velký bussiness: co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...</h3><br />
+<h3>C. velký bussiness</h3> 
+co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...<br />
 <br/>
 <hr/>
 2016/10 - kratičké video, kde je vidět rychlost vykreslení QR na serialdisplay<br/>
