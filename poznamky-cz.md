@@ -6,10 +6,9 @@ Aktuální beta verze (2016/10)<br />
 > zobrazení na <b>sériovém monitoru</b> (Arduino UNO + TTF 320x240 display) <i>pátral bych po jiném displeji, přímo SPI.. ? Nebo Nextion  na UARTu (mám zvládnuto, umí dobře i touchscreen..)</i><br />
 stávající serial display https://github.com/octopusengine/serial-display
 <br />
-<br />
 <hr />
 <h2>Aktuální TODO:</h2><br>
-<hr />
+<h2></h2>
 <h3>A. lepší prasrování blockchainu</h3>
 
 návrhy z FB Bitcoinové komunity:<br>
