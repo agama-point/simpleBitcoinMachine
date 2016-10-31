@@ -15,6 +15,8 @@ návrhy z FB Bitcoinové komunity:<br>
 1) https://coin.cz/ <br>
 2) https://blockexplorer.com/api-ref<br>
 3) https://github.com/GENERALBYTESCOM/bitrafael_public/blob/master/bitrafael_common/src/com/generalbytes/bitrafael/api/IBitrafaelBitcoinAPI.java<br>
+<hr />
+Jako dobrý zdroj vypadá: http://btc.blockr.io/api/v1/address/info/198aMn6ZYAczwrE5NvNTUMyJ5qkfy4g3Hi
 
 
 
