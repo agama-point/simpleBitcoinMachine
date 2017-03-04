@@ -58,7 +58,6 @@ Payment of small amounts => waiting only for new transaction in blockchain...<br
 <b>All this takes a few seconds!</b><br />
 <hr />
 Next step? LoLin + micropython / or Raspberry Py 3?<br />
-blockchain.info better parse or JSON API<br />
 >> Final machine for dispensing goods or opening doors ;-) Up2U</br>
 <br /><br /><br />
 <hr />
