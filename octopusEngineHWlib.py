@@ -1,13 +1,14 @@
-#var/lib/mpd/playlists
+# var/lib/mpd/playlists
 # simple library for raspberry pi + serialdisplay (arduino) 
 # 2016/05
 # 2016/10 - GPIO Jmp
-# octopusengine.eu
+# octopusengine.org
 # ------------------------------
 import sys, os, subprocess, time
 from socket import gethostname, gethostbyname #getIp
 from time import sleep
 
+#---nextion
 nxRead="00"
 nx1="03"
 nx2="04"
