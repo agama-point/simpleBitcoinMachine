@@ -2,22 +2,23 @@
 # ing.Jan Copak - Czechrepublic / Prague
 # octopusengine.org | newreality.eu
 #--------------------------------------------
-
-#block-0.2 - 2015-12 - main idea + serial display
-#block-0.316 - 2016-10 - "better" HTMLParser + nextion display
-#block-0.317 - 2017-02 - JSON HTMLParser + new "design"
+# 0.2 - 2015-12 - main idea + serial display
+# 0.316 - 2016-10 - "better" HTMLParser + nextion display
+# 0.317 - 2017-02 - JSON HTMLParser + alarm loop / new "design"
 
 # is last transaction from blockchain.info today? (/this minute) yes > action
 #--------------------------------------------
 
-ver="ver. 0.317 | 2016/12" #alarm loop
+ver="ver. 0.317 | 2017/02" #alarm loop
 
 import urllib
 import os, time, datetime
 import urllib2 #course
 import json    #=
+
 from threading import Thread, Event
 nexThread = True #running
+
 from octopusEngineHWlib import *
 from octopusEngineBTCmachine import *
 
@@ -26,10 +27,11 @@ time.sleep(6)
 GPIO.output(RELE1, True) #off
 time.sleep(2)
 
-
+# flash disk and ramdisk:
 flashPath = "/home/pi/fd/"
 ramdiskPath = "/home/pi/ramdisk/"
 
+# values A-F:
 vA = 1.0
 vB = 2.0
 vC = 3.0
@@ -46,19 +48,17 @@ nextionBool = True
 arrLines = []
 transactions = []
 
-pip1() #prvini pip po inicializaci 
+pip1() #initialization.ok > beep 
 
 wasJmp = isJmp1()
 jmp1 = "-JMP:"+str(wasJmp)
 print jmp1
 
-#alert - alarm
-
-minMin=700 #pod co to asi neklesne
+minMin=800 #for chart: minimum value
 kMax = 0
 kMin = 999999	
 	
-kS = 901# aktual okoli	
+kS = 1001# cca aktual
 aMin = 1111
 aMax = 1299
 aPip = 931
@@ -203,15 +203,13 @@ def alarmLoop():
 	for dX in range(110):
 		co="fill "+str(dX*3)+","+str(k2g(kS))+",1,1,GRAY" #900
 		neXcmd(co) 
-		time.sleep(0.05)
-		
+		time.sleep(0.05)		
 	
 	neXcmd("fill "+str(1)+","+str(k2g(aMin))+",2,2,BLUE") 
 	neXcmd("fill "+str(3)+","+str(k2g(aMin))+",2,2,BLUE") 
 		
 	neXcmd("fill "+str(1)+","+str(k2g(aMax))+",2,2,BLUE") 
 	neXcmd("fill "+str(3)+","+str(k2g(aMax))+",2,2,BLUE") 	
-	
 	
 	#for test in range(5):
 	while True:	
@@ -250,7 +248,6 @@ def alarmLoop():
 
 			nowTim2 = datetime.datetime.now().strftime("%H:%M:%S")
 			neXtxt("tb2",str(nowTim2)) 
-
 
 def alarm(co):
 	for okLoop in range(3):
@@ -581,6 +578,5 @@ except (KeyboardInterrupt, SystemExit), e:
 	thrnx.join()
 
 print "exiting..."
-
 #--------------------------------------------/end	
 	
