@@ -10,7 +10,7 @@
 #block-0.316 - 2016-10 - "better" HTMLParser + nextion display
 #block-0.317 - 2017-02 - JSON HTMLParser + new "design" 
 
-# is last transaction from blockchain.info > action
+# if exist "new" transaction in blockchain.info > action
 </pre>
 
 starting:<br>
