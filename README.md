@@ -6,7 +6,7 @@ new transaction > action<br />
 <br /><br />
 <hr />
 <pre>
-# octopusengine.eu | newreality.eu
+# octopusengine.org | newreality.eu
 #--------------------------------------------
 
 #block-0.2 - 2015-12 - main idea + serial display
