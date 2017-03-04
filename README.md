@@ -1,10 +1,7 @@
 # simpleBitcoinMachine
 
-alfa testing: <b>block-test02.py</b><br />
-beta testing: <b>simplebtc.py</b><br />
-new transaction > action<br />
-<br /><br />
-<hr />
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/bm17.JPG" alt="btcmachine.jpg " width="800"><br />
+2017/02 - ver. 0.317<br />
 <pre>
 # octopusengine.org | newreality.eu
 #--------------------------------------------
@@ -42,8 +39,7 @@ http://www.octopusengine.org/bitcoin-simple-machine/<br />
 <br />
 <br />
 <hr />
-<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/bm17.JPG" alt="btcmachine.jpg " width="800"><br />
-2017/02 - ver. 0.317<br />
+
 <br />
 
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/bm1617.JPG" alt="btcmachine.jpg " width="800"><br />
@@ -96,4 +92,9 @@ Please support us with BTC if you find the code useful:  <br />
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/qg.png" alt="btc "><br />
 https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e
 <br /><br /><br />
+alfa testing: <b>block-test02.py</b><br />
+beta testing: <b>simplebtc.py</b><br />
+new transaction > action<br />
+<br /><br />
+<hr />
 
