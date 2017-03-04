@@ -41,13 +41,10 @@ http://www.octopusengine.org/bitcoin-simple-machine/<br />
 <hr />
 
 <br />
-
+2016/2017 last edition:<br />
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/bm1617.JPG" alt="btcmachine.jpg " width="800"><br />
 <br />
 <br />
-
-
-
 
 2015/2016 old edition:<br />
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/btcmachine.jpg " alt="btcmachine.jpg " width="800">
@@ -79,12 +76,7 @@ displayQR(nextionBool,qrGet)
 ...> we use <b>qrencode</b>
 os.system('qrencode -o qrcode.png '+qrGet)
 os.system('qrencode -t ASCII -o qrcode.txt '+qrGet)
-
 </pre>
-
-
-
-
 
 <br /><br /><br />
 What about BTC donation? ;-)<br />
