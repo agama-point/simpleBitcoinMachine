@@ -2,7 +2,6 @@
 
 alfa testing: <b>block-test02.py</b><br />
 beta testing: <b>simplebtc.py</b><br />
-Paper wallet QR code...<br />
 new transaction > action<br />
 <br /><br />
 <hr />
