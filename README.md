@@ -15,8 +15,19 @@ new transaction > action<br />
 
 # is last transaction from blockchain.info > action
 </pre>
+
+starting:<br>
+<code>sudo python simplebtc.py</code><br> 
+
 <b>YES! It works!</b>
 <hr />
+
+About:<br />
+http://www.octopusengine.org/bitcoin-simple-machine/<br />
+<br />
+<br />
+<hr />
+
 
 
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/btcmachine.jpg " alt="btcmachine.jpg " width="800">
