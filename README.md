@@ -70,7 +70,8 @@ blockchain.info better parse or JSON API<br />
 <br /><br /><br />
 <hr />
 <br /><br /><br />
-What about BTC donation? ;-)<br /><br />
+What about BTC donation? ;-)<br />
+Please support us with BTC if you find the code useful:  <br />
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/qg.png" alt="btc "><br />
 https://blockchain.info/address/11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e
 <br /><br /><br />
