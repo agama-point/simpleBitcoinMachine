@@ -80,7 +80,9 @@ lastNum =int(float(jObj["last"]))
 <pre>
 qrGet="bitcoin:"+wallAdr+"?amount="+str(amount) #+"?label="+label +"&message=Payment" #+"&ex"
 displayQR(nextionBool,qrGet)
-...>
+...> we use <b>qrencode</b>
+os.system('qrencode -o qrcode.png '+qrGet)
+os.system('qrencode -t ASCII -o qrcode.txt '+qrGet)
 
 </pre>
 
