@@ -78,6 +78,9 @@ lastNum =int(float(jObj["last"]))
 <hr />
 <b>QR code:</b><br />
 <pre>
+qrGet="bitcoin:"+wallAdr+"?amount="+str(amount) #+"?label="+label +"&message=Payment" #+"&ex"
+displayQR(nextionBool,qrGet)
+...>
 
 </pre>
 
