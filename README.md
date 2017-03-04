@@ -29,7 +29,7 @@ http://www.octopusengine.org/bitcoin-simple-machine/<br />
 <hr />
 
 
-
+2015/2016 old edition:<br />
 <img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/btcmachine.jpg " alt="btcmachine.jpg " width="800">
 
 
