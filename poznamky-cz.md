@@ -9,16 +9,13 @@ stávající serial display https://github.com/octopusengine/serial-display
 <hr />
 <h2>Aktuální TODO:</h2><br>
 <h2></h2>
-<h3>A. lepší prasrování blockchainu</h3>
-
+<h3>A. prasrování blockchainu</h3>
 návrhy z FB Bitcoinové komunity:<br>
 1) https://coin.cz/ <br>
 2) https://blockexplorer.com/api-ref<br>
 3) https://github.com/GENERALBYTESCOM/bitrafael_public/blob/master/bitrafael_common/src/com/generalbytes/bitrafael/api/IBitrafaelBitcoinAPI.java<br>
 <hr />
 Jako dobrý zdroj vypadá: http://btc.blockr.io/api/v1/address/info/198aMn6ZYAczwrE5NvNTUMyJ5qkfy4g3Hi
-
-
 
 
 <h3>B. dotáhnout funkční verze a různé periferie</h3>
@@ -28,15 +25,12 @@ případná app z mobilu, platební automaty, zámky, IoT...<br />
 3) a otevírá se široké pole i pro IoT.. zatím třeba na ESP8266<br>
 https://github.com/musdom/BlockThing
 
-
-<h3>C. velký bussiness</h3> 
+<h3>C. bussiness</h3> 
 co z toho nechat jako open source? krabička? prodej? distribuce? záruka? servis? ...<br />
 <br/>
 <hr/>
 2016/10 - kratičké video, kde je vidět rychlost vykreslení QR na serialdisplay<br/>
 https://www.instagram.com/p/BMBZW_qAxMp/?taken-by=octopusengine
-
-
 
 <hr>
 odkaz na FB první publikování 20. 10. 2016
@@ -56,5 +50,3 @@ http://bitcoin.stackexchange.com/questions/21395/how-can-a-website-detect-when-b
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://blockchain.info/Resources/js/pay-now-button.js"></script>
-
-
