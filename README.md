@@ -27,6 +27,28 @@ http://www.octopusengine.org/bitcoin-simple-machine/<br />
 <br />
 <br />
 <hr />
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/bm17.JPG" alt="btcmachine.jpg " width="800"><br />
+2017/02 - ver. 0.317<br />
+<br />
+
+<img src="https://raw.githubusercontent.com/octopusengine/simpleBitcoinMachine/master/images/bm1617.JPG" alt="btcmachine.jpg " width="800"><br />
+<br />
+<br />
+
+While opinions on cryptocurrencies are strongly divided, we believe they will find a place in future. As a de-centralised payment instrument, fully computerised currency and store of value.<br /><br />
+
+That’s why we are creating Simple Bitcoin Terminal.<br /><br />
+
+Light, portable, easy to operate – cashier that allows you to accept payments in Bitcoin (and possibly other cryptocurrencies).<br /><br />
+
+Constructed from Raspberry Pi and Nextion touch display. You can adjust it and use flexibly in variety of cases:<br />
+
+– PoS system in shops, restaurants, bars….<br />
+– Payment processor for vending and ticket machines<br />
+– Part of paid access/service system (unlocking a door, switching a light, AC…)<br />
+– Can include BTC chart and alerts<br /><br />
+<hr />
+
 
 
 2015/2016 old edition:<br />
