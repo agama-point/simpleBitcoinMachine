@@ -45,9 +45,7 @@ def neXtxt(kam,label):
     #displLab("testLAB raspi 2 " + ver)
     #def n(co):
     #hh.dispWrite(chr(co))
-    time.sleep(0.05)
-    
-    
+    time.sleep(0.05)     
     
     
 print "nextion baud rate setup"
@@ -61,10 +59,4 @@ time.sleep(0.05)
 co="bauds=9600"
 neXcmd(co) 
 
-print "ok"
-
-
-
-
-
-    
+print "ok"   
