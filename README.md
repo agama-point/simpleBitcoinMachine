@@ -69,6 +69,22 @@ blockchain.info better parse or JSON API<br />
 >> Final machine for dispensing goods or opening doors ;-) Up2U</br>
 <br /><br /><br />
 <hr />
+<b>simple bitstamp JSON parsser:</b><br />
+<pre>
+cfile = urllib2.urlopen("https://www.bitstamp.net/api/ticker/").read()
+jObj = json.loads(bcfile)
+lastNum =int(float(jObj["last"])) 
+</pre>
+<hr />
+<b>QR code:</b><br />
+<pre>
+
+</pre>
+
+
+
+
+
 <br /><br /><br />
 What about BTC donation? ;-)<br />
 Please support us with BTC if you find the code useful:  <br />
