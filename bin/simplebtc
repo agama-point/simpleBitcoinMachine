@@ -21,8 +21,8 @@ import json    #=
 from threading import Thread, Event
 nexThread = True #running
 
-from simpleBitcoinMachine.octopusEngineHWlib import *
-from simpleBitcoinMachine.octopusEngineBTCmachine import *
+from octopusEngine.simpleBitcoinMachine.HWlib import *
+from octopusEngine.simpleBitcoinMachine.BTCmachine import *
 
 GPIO.output(RELE1, False)
 time.sleep(6)

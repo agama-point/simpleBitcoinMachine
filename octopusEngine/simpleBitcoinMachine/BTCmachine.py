@@ -11,7 +11,7 @@ import json
 from socket import gethostname, gethostbyname #getIp
 from time import sleep
 
-from simpleBitcoinMachine.octopusEngineHWlib import *
+from octopusEngines.simpleBitcoinMachine.HWlib import *
 
 #my wallet address:
 wallAdr="11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e"

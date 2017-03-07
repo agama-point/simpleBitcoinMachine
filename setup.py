@@ -38,7 +38,7 @@ setup(
         'Programming Language :: Python',
         'Topic :: Office/Business :: Financial',
     ],
-    packages=['simpleBitcoinMachine'],
+    packages=['octopusEngine.simpleBitcoinMachine'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
