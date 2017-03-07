@@ -43,4 +43,7 @@ setup(
     zip_safe=False,
     install_requires=[
     ],
+    scripts=[
+        'bin/simplebtc'
+    ]
 )
