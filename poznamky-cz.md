@@ -47,6 +47,8 @@ http://bitcoin.stackexchange.com/questions/21395/how-can-a-website-detect-when-b
 <hr/>
 <h2>Litecoin</h2>
 http://ltc.blockr.io/api/v1/address/info/LM4qTR7WZiUe7BAxesj4N1UPadWAnQEj92<br/>
+{"status":"success","data":{"address":"LamLnTFWNwjcrxqH9eW58ghdq8PJTPXp2T","is_unknown":true,"balance":0,"balance_multisig":0,"totalreceived":0,"nb_txs":0,"first_tx":null,"last_tx":null,"is_valid":true},"code":200,"message":""}<br/>
+http://ltc.blockr.io/api/v1/address/info/LM4qTR7WZiUe7BAxesj4N1UPadWAnQEj92<br/>
 
 
 <hr/>
