@@ -165,10 +165,7 @@ thrnx.start()
 
 def oneTestBlockchain():
 	global transData, transValue, transTime, txsTime
-	transData=getLastTransaction()
-	transValue=transData[0]
-	transTime=transData[1]
-	txsTime=transData[2]
+	transValue, transTime, txsTime = getLastTransaction()
 
 def k2g(k):
 	#y=dY-(k-minMin)/2
