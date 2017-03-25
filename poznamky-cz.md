@@ -44,7 +44,12 @@ https://blockexplorer.com/api/rawtx/7dea68bf5b470747c1d821ac6e223e0d8ad611f51ddb
 
 http://bitcoin.stackexchange.com/questions/21395/how-can-a-website-detect-when-bitcoins-have-been-deposited<br/>
 <br/>
-<br/>
+<hr/>
+<h2>Litecoin</h2>
+http://ltc.blockr.io/api/v1/address/info/LM4qTR7WZiUe7BAxesj4N1UPadWAnQEj92<br/>
+
+
+<hr/>
 <br/>
 <br/>
 
