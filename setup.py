@@ -42,8 +42,12 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
+        "blockr-python==0.1.0"
     ],
     scripts=[
         'bin/simplebtc'
+    ],
+    dependency_links=[
+        "git+https://github.com/BrnoPCmaniak/blockr-python.git#egg=blockr-python-0.1.0"
     ]
 )
