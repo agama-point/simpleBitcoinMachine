@@ -8,13 +8,16 @@
 
 #block-0.2 - 2015-12 - main idea + serial display
 #block-0.316 - 2016-10 - "better" HTMLParser + nextion display
-#block-0.317 - 2017-02 - JSON HTMLParser + new "design" 
+#block-0.317 - 2017-02 - JSON HTMLParser + new "design"
 
 # if exist "new" transaction in blockchain.info > action
 </pre>
 
+install:<br>
+<code>sudo python setup.py install</code><br> 
+
 starting:<br>
-<code>sudo python simplebtc.py</code><br> 
+<code>sudo simplebtc</code><br>
 
 <b>YES! It works!</b>
 <hr />
@@ -65,7 +68,7 @@ Next step? LoLin + micropython / or Raspberry Py 3?<br />
 <pre>
 cfile = urllib2.urlopen("https://www.bitstamp.net/api/ticker/").read()
 jObj = json.loads(bcfile)
-lastNum =int(float(jObj["last"])) 
+lastNum =int(float(jObj["last"]))
 </pre>
 <hr />
 <b>QR code:</b><br />
@@ -88,4 +91,3 @@ beta testing: <b>simplebtc.py</b><br />
 new transaction > action<br />
 <br /><br />
 <hr />
-
