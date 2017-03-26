@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-from simpleBitcoinMachine import __version__
+from octopusEngine.simpleBitcoinMachine import __version__
 import os
 import io
 
