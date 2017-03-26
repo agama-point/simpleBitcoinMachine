@@ -21,7 +21,7 @@ setup(
     version=__version__,
     platforms=['OS Independent'],
     description='Light, portable, easy to operate – cashier that allows you to accept payments in Bitcoin (and possibly other cryptocurrencies).',
-    long_description=read('README.txt', 'CHANGES.txt'),
+    long_description=read('README.md'),
     keywords='bitcoin terminal',
     url='https://github.com/octopusengine/simpleBitcoinMachine',
     author='Honza S. Copak',
