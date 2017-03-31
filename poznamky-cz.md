@@ -1,4 +1,9 @@
 <h2>Poznámky k dalšímu vývoji:</h2><br />
+Honza: 2015 první funkční verze s BTc, postupně dva displeje (nejdřív obyčejný TFT s arduinem) pak chtrý UART Nextion<br />
+Petr Kracík: 2016 obecné úvahy o možnostech, trochu jsem konzultovali první parser api blockchainu<br />
+Filip Dobrovolný: 2017 upravení hlavní struktury a postupné testování LTC<br />
+<hr />
+<h2>Poznámky k dalšímu vývoji:</h2><br />
 <br />
 Aktuální beta verze (2016/10)<br />
 > běží na <b>Raspberry Pi 2</b> <i>půjde na RPi 3, ale nekompatibilita UART... vyřešeno, neaplikováno</i><br />
