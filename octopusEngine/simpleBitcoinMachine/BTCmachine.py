@@ -14,8 +14,9 @@ from time import sleep
 from octopusEngines.simpleBitcoinMachine.HWlib import *
 
 #my wallet address:
-wallAdr="11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e"
-urlJson = "https://blockchain.info/address/"+wallAdr+"?format=json"
+wallAdrBTC="11r118H2Qv4oHfjFuJnuU8GZHGNqwEH9e"
+wallAdrLTC="LTyGzMwT4TxxAgsevN17sifHaKzFwMuAZU"
+urlJson = "https://blockchain.info/address/"+wallAdrBTC+"?format=json"
 
 urlIoT="http://www.sentu.cz/api/led2.php"
 
