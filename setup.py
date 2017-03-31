@@ -45,7 +45,8 @@ setup(
         "blockr-python==0.1.0"
     ],
     scripts=[
-        'bin/simplebtc'
+        'bin/simplebtc',
+        'bin/simplebtc_emulator'
     ],
     dependency_links=[
         "git+https://github.com/BrnoPCmaniak/blockr-python.git#egg=blockr-python-0.1.0"
