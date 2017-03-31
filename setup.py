@@ -39,13 +39,13 @@ setup(
         'Topic :: Office/Business :: Financial',
     ],
     packages=['octopusEngine.simpleBitcoinMachine'],
-    include_package_data=True,
-    zip_safe=False,
     install_requires=[
-        "blockr-python==0.1.0"
+        "blockr-python==0.1.0",
+        "Pillow"
     ],
     scripts=[
-        'bin/simplebtc'
+        'bin/simplebtc',
+        'bin/simplebtc_emulator'
     ],
     dependency_links=[
         "git+https://github.com/BrnoPCmaniak/blockr-python.git#egg=blockr-python-0.1.0"

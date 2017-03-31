@@ -1,7 +1,7 @@
 """Library for handling operations with cryptocurrencies."""
 from blockr.api import Api
 
-from utils import first, parse_utc
+from octopusEngine.simpleBitcoinMachine.utils import first, parse_utc
 
 class TransactionException(Exception):
     """Base Exception for Transaction errors."""
