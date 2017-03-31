@@ -13,11 +13,21 @@
 # if exist "new" transaction in blockchain.info > action
 </pre>
 
-install:<br>
-<code>sudo python setup.py install</code><br> 
+install (pip):<br>
+```
+sudo pip install git+https://github.com/octopusengine/simpleBitcoinMachine.git@currencylib#egg=simpleBitcoinMachine --process-dependency-links
+```
+
+install (from code):<br>
+```
+git clone https://github.com/octopusengine/simpleBitcoinMachine.git
+sudo python setup.py install
+```
 
 starting:<br>
-<code>sudo simplebtc</code><br>
+```
+sudo simplebtc
+```
 
 <b>YES! It works!</b>
 <hr />
