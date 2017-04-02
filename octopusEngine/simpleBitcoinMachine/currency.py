@@ -191,10 +191,6 @@ class BlockrCurrency(object):
         raise DeprecationWarning("Blockr.io exchange rates are unreliable.")
         if exchange_rate is None:
             exchange_rate = self.get_exchange_rates()
-        print(exchange_rate)
-        print(currency.upper() if currency != exchange_rate["base"] else self.currency_short)
-        print(float(exchange_rate["rates"][
-            currency.upper() if currency != exchange_rate["base"] else self.currency_short]))
         return float(exchange_rate["rates"][
             currency.upper() if currency != exchange_rate["base"] else self.currency_short])
 
@@ -232,9 +228,16 @@ class LitecoinCurrency(BlockrCurrency):
 
 
 def convert_currency(base, to, amount):
+    """Convert between two cryptocurrencies.
+
+    base     str: code of base currency have to be supported by btc-e.
+    to       str: code of currency into which we want to exchange have to be supported by btc-e or
+              Europen Bank
+    amount float: The amount of money
+    """
     response = json.loads(requests.get(BTC_e_BASE_URL % (base.lower(), to.lower())).text)
 
-    if "success" in response.keys():
+    if "success" in response.keys():  # currency is not supported by BTC-e
         response = json.loads(requests.get(BTC_e_BASE_URL % (base.lower(), "usd")).text)
         fixerio = Fixerio(base="USD")  # HAVE TO BE ON SEPERATE LINE
         rate = fixerio.latest()["rates"][to.upper()] * response[response.keys()[0]]["sell"]

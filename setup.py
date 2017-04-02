@@ -48,8 +48,7 @@ setup(
         "fixerio"
     ],
     scripts=[
-        'bin/simplebtc',
-        'bin/simplebtc_emulator'
+        'bin/simplebtc'
     ],
     entry_points={
         'console_scripts': [
