@@ -1,20 +1,22 @@
 """Library for handling operations with cryptocurrencies."""
-from __future__ import division
-from __future__ import unicode_literals
+from __future__ import division, unicode_literals
+
+import json
+
+import requests
 
 from blockr.api import Api
-import json
-import requests
 from fixerio import Fixerio
-
 from octopusEngine.simpleBitcoinMachine.utils import first, parse_utc
 
 BTC_e_BASE_URL = "https://btc-e.com/api/3/ticker/%s_%s"
+
 
 class TransactionException(Exception):
     """Base Exception for Transaction errors."""
 
     pass
+
 
 class NotEnoughTransactionConfirmations(TransactionException):
     """Error during validation. Not enough confirmations."""
@@ -32,16 +34,18 @@ class NotEnoughTransactionConfirmations(TransactionException):
         return "Transaction doesn't have wanted amount of confirmations %d out of %d" % (
             self.confirmations, self.wanted)
 
+
 class UncomfirmedTransaction(NotEnoughTransactionConfirmations):
     """Error during validation. The transaction is uncomfirmed."""
 
     def __init__(self):
         """Initialize UncomfirmedTransaction."""
-        pass # override parent __init__
+        pass  # override parent __init__
 
     def __str__(self):
         """Convert Exception to str."""
         return "This transaction is unverified."
+
 
 class InvalidTransactionValue(TransactionException):
     """The transaction doesn't have wanted amount."""
@@ -59,6 +63,7 @@ class InvalidTransactionValue(TransactionException):
         return "Transaction is for different price wanted %d, but transaction gives only %d" % (
             self.wanted, self.price
         )
+
 
 class BlockrCurrency(object):
     """API for Blockr.
@@ -208,6 +213,7 @@ class BlockrCurrency(object):
         raise DeprecationWarning("Blockr.io exchange rates are unreliable.")
         return value * (1.0 / self.get_exchange_rate_for_currency(currency, exchange_rate))
 
+
 class BitcoinCurrency(BlockrCurrency):
     """Bitcoin currency at Blockr.
 
@@ -216,6 +222,7 @@ class BitcoinCurrency(BlockrCurrency):
 
     currency = "Bitcoin"
     currency_short = "BTC"
+
 
 class LitecoinCurrency(BlockrCurrency):
     """Litecoin currency at Blockr.
