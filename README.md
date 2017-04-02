@@ -32,6 +32,9 @@ sudo simplebtc
 <b>YES! It works!</b>
 <hr />
 
+**Testing:**
+To test the payment use `simplebtc_emulator` this requires ImageMagick or other PIL [Image.show()](http://pillow.readthedocs.io/en/3.4.x/reference/Image.html#PIL.Image.Image.show) compatible displaying utility.
+
 
 While opinions on cryptocurrencies are strongly divided, we believe they will find a place in future. As a de-centralised payment instrument, fully computerised currency and store of value.<br /><br />
 
