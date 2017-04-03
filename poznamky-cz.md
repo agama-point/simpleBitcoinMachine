@@ -2,6 +2,7 @@
 Honza: 2015 první funkční verze s BTc, postupně dva displeje (nejdřív obyčejný TFT s arduinem) pak chtrý UART Nextion<br />
 Petr Kracík: 2016 obecné úvahy o možnostech, trochu jsem konzultovali první parser api blockchainu<br />
 Filip Dobrovolný: 2017 upravení hlavní struktury a postupné testování LTC<br />
+a zkusíme také Monero (to bude asi větší oříšek)<br />
 <hr />
 <h2>Poznámky k dalšímu vývoji:</h2><br />
 <br />
