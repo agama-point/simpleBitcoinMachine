@@ -1,12 +1,22 @@
 """Library for handling operations with cryptocurrencies."""
-from blockr.api import Api
+from __future__ import division, unicode_literals
 
-from utils import first, parse_utc
+import json
+
+import requests
+
+from blockr.api import Api
+from fixerio import Fixerio
+from octopusEngine.simpleBitcoinMachine.utils import first, parse_utc
+
+BTC_e_BASE_URL = "https://btc-e.com/api/3/ticker/%s_%s"
+
 
 class TransactionException(Exception):
     """Base Exception for Transaction errors."""
 
     pass
+
 
 class NotEnoughTransactionConfirmations(TransactionException):
     """Error during validation. Not enough confirmations."""
@@ -24,16 +34,18 @@ class NotEnoughTransactionConfirmations(TransactionException):
         return "Transaction doesn't have wanted amount of confirmations %d out of %d" % (
             self.confirmations, self.wanted)
 
+
 class UncomfirmedTransaction(NotEnoughTransactionConfirmations):
     """Error during validation. The transaction is uncomfirmed."""
 
     def __init__(self):
         """Initialize UncomfirmedTransaction."""
-        pass # override parent __init__
+        pass  # override parent __init__
 
     def __str__(self):
         """Convert Exception to str."""
         return "This transaction is unverified."
+
 
 class InvalidTransactionValue(TransactionException):
     """The transaction doesn't have wanted amount."""
@@ -52,16 +64,19 @@ class InvalidTransactionValue(TransactionException):
             self.wanted, self.price
         )
 
+
 class BlockrCurrency(object):
     """API for Blockr.
 
     parameters:
-    * currency str: Name of currency used.
+    * currency       str: Name of currency used.
+    * currency_short str: Three letter currency shortcut
     """
 
     address = None
     api = None
     currency = None
+    currency_short = None
 
     def __init__(self, address):
         """Initialize BlockrCurrency.
@@ -101,10 +116,13 @@ class BlockrCurrency(object):
         return self.api.transaction(transaction_id)["data"]
 
     def _use_or_get_transaction(self, transaction):
-        if type(transaction) == str:
+        if type(transaction) == str or type(transaction) == unicode:
             return self.get_transaction(transaction)
         elif type(transaction) == dict:
-            return transaction
+            if "trade" in transaction.keys():
+                return transaction
+            else:
+                return self._use_or_get_transaction(transaction["tx"])  # Obtain whole transaction
         else:
             raise TypeError
 
@@ -126,17 +144,17 @@ class BlockrCurrency(object):
         output = self._get_my_output(tx)
         # The amount can be higher e.g. Tip
         if output.get("amount", None) >= value and \
-                transaction["confirmations"] >= confirmations and \
-                not transaction["is_unconfirmed"]:
+                tx["confirmations"] >= confirmations and \
+                not tx["is_unconfirmed"]:
             return True
-        elif not transaction["confirmations"] >= confirmations:
-            raise NotEnoughTransactionConfirmations(transaction["confirmations"], confirmations)
+        elif not tx["confirmations"] >= confirmations:
+            raise NotEnoughTransactionConfirmations(tx["confirmations"], confirmations)
         elif not output.get("amount", None) >= value:
             raise InvalidTransactionValue(output.get("amount", 0), value)
-        elif transaction["is_unconfirmed"]:
+        elif tx["is_unconfirmed"]:
             raise UncomfirmedTransaction
         else:
-            print(output.get("amount", None), value, transaction["confirmations"] >= confirmations)
+            print(output.get("amount", None), value, tx["confirmations"] >= confirmations)
 
     def get_address_of_author_of_transaction(self, transaction):
         """Get adress of author of transaction.
@@ -156,7 +174,8 @@ class BlockrCurrency(object):
 
     def get_exchange_rates(self):
         """Get exchange_rate for Class currency."""
-        return self.api.exchange_rate()["data"]
+        raise DeprecationWarning("Blockr.io exchange rates are unreliable.")
+        return self.api.exchange_rate()["data"][0]
 
     def get_exchange_rate_time(self, exchange_rate=None):
         """Get time of update of exchange_rate.
@@ -164,6 +183,7 @@ class BlockrCurrency(object):
         parameters:
         * exchange_rate exchange_rate dict: Exchange rate (optional)
         """
+        raise DeprecationWarning("Blockr.io exchange rates are unreliable.")
         return parse_utc((exchange_rate or self.get_exchange_rates())["updated_utc"])
 
     def get_exchange_rate_for_currency(self, currency, exchange_rate=None):
@@ -173,10 +193,11 @@ class BlockrCurrency(object):
         * currency                  string: Name of selected currency ("CZK", "USD")
         * exchange_rate exchange_rate dict: Exchange rate (optional)
         """
+        raise DeprecationWarning("Blockr.io exchange rates are unreliable.")
         if exchange_rate is None:
             exchange_rate = self.get_exchange_rates()
-        return exchange_rate["rates"][
-            currency.upper() if currency != exchange_rate["base"] else "BTC"]
+        return float(exchange_rate["rates"][
+            currency.upper() if currency != exchange_rate["base"] else self.currency_short])
 
     def exchange_currency(self, currency, value, exchange_rate=None):
         """Exchange between Class currency and selected currency.
@@ -189,7 +210,9 @@ class BlockrCurrency(object):
         * value                      float: Number of coins of Class currency
         * exchange_rate exchange_rate dict: Exchange rate (optional)
         """
-        return value * (1.0 / self.get_exchange_rate_for_currency(exchange_rate, currency))
+        raise DeprecationWarning("Blockr.io exchange rates are unreliable.")
+        return value * (1.0 / self.get_exchange_rate_for_currency(currency, exchange_rate))
+
 
 class BitcoinCurrency(BlockrCurrency):
     """Bitcoin currency at Blockr.
@@ -198,6 +221,8 @@ class BitcoinCurrency(BlockrCurrency):
     """
 
     currency = "Bitcoin"
+    currency_short = "BTC"
+
 
 class LitecoinCurrency(BlockrCurrency):
     """Litecoin currency at Blockr.
@@ -206,3 +231,24 @@ class LitecoinCurrency(BlockrCurrency):
     """
 
     currency = "Litecoin"
+    currency_short = "LTC"
+
+
+def convert_currency(base, to, amount):
+    """Convert between two cryptocurrencies.
+
+    base     str: code of base currency have to be supported by btc-e.
+    to       str: code of currency into which we want to exchange have to be supported by btc-e or
+              Europen Bank
+    amount float: The amount of money
+    """
+    response = json.loads(requests.get(BTC_e_BASE_URL % (base.lower(), to.lower())).text)
+
+    if "success" in response.keys():  # currency is not supported by BTC-e
+        response = json.loads(requests.get(BTC_e_BASE_URL % (base.lower(), "usd")).text)
+        fixerio = Fixerio(base="USD")  # HAVE TO BE ON SEPERATE LINE
+        rate = fixerio.latest()["rates"][to.upper()] * response[response.keys()[0]]["sell"]
+    else:
+        rate = response[response.keys()[0]]["sell"]
+
+    return amount * rate

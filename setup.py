@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
-from octopusEngine.simpleBitcoinMachine import __version__
-import os
 import io
+import os
+
+from setuptools import find_packages, setup
+
+from octopusEngine.simpleBitcoinMachine import __version__
 
 HERE = os.path.abspath(os.path.dirname(__file__))
+
 
 def read(*filenames, **kwargs):
     encoding = kwargs.get('encoding', 'utf-8')
@@ -38,16 +41,22 @@ setup(
         'Programming Language :: Python',
         'Topic :: Office/Business :: Financial',
     ],
-    packages=['octopusEngine.simpleBitcoinMachine'],
-    include_package_data=True,
-    zip_safe=False,
+    packages=find_packages(),
     install_requires=[
-        "blockr-python==0.1.0"
+        "blockr-python==0.1.0",
+        "Pillow",
+        "future",
+        "fixerio"
     ],
     scripts=[
         'bin/simplebtc',
         'bin/simplebtc_emulator'
     ],
+    entry_points={
+        'console_scripts': [
+            'simplebtc_emulator=octopusEngine.simpleBitcoinMachine.bin.emulator:emulator'
+        ]
+    },
     dependency_links=[
         "git+https://github.com/BrnoPCmaniak/blockr-python.git#egg=blockr-python-0.1.0"
     ]
