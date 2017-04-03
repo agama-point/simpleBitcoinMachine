@@ -57,6 +57,11 @@ http://ltc.blockr.io/api/v1/address/info/LM4qTR7WZiUe7BAxesj4N1UPadWAnQEj92<br/>
 
 
 <hr/>
+<h2>Monero</h2>
+https://getmonero.org/getting-started/accepting<br/>
+<br/>
+<br/>
+<hr />
 <br/>
 <br/>
 
