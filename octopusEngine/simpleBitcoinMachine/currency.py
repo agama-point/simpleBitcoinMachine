@@ -9,7 +9,7 @@ from blockr.api import Api
 from fixerio import Fixerio
 from octopusEngine.simpleBitcoinMachine.utils import first, parse_utc
 
-BTC_e_BASE_URL = "https://btc-e.com/api/3/ticker/%s_%s"
+BITSTAMP_TICKER_BASE_URL = "https://www.bitstamp.net/api/v2/ticker_hour/{base}{to}/"
 
 
 class TransactionException(Exception):
@@ -237,18 +237,23 @@ class LitecoinCurrency(BlockrCurrency):
 def convert_currency(base, to, amount):
     """Convert between two cryptocurrencies.
 
-    base     str: code of base currency have to be supported by btc-e.
-    to       str: code of currency into which we want to exchange have to be supported by btc-e or
-              Europen Bank
+    base     str: code of base currency have to be supported by bitstamp (btc, ltc, xrp).
+    to       str: code of currency into which we want to exchange have to be supported by
+                  bitstamp (usd, eur) or Europen Bank
     amount float: The amount of money
     """
-    response = json.loads(requests.get(BTC_e_BASE_URL % (base.lower(), to.lower())).text)
+    assert base.lower() in ["ltc", "btc", "xrp"]
 
-    if "success" in response.keys():  # currency is not supported by BTC-e
-        response = json.loads(requests.get(BTC_e_BASE_URL % (base.lower(), "usd")).text)
+    if base.lower() in ["ltc", "xrp"] and to.lower() == "btc":
+        rate = float(json.loads(requests.get(BITSTAMP_TICKER_BASE_URL.format(
+                base=base.lower(), to=to.lower())).text)['last'])
+    elif to.lower() not in ["usd", "eur"]:  # to currency is not supported by bitstamp
+        response = json.loads(requests.get(BITSTAMP_TICKER_BASE_URL.format(
+            base=base.lower(), to="usd")).text)
         fixerio = Fixerio(base="USD")  # HAVE TO BE ON SEPERATE LINE
-        rate = fixerio.latest()["rates"][to.upper()] * response[response.keys()[0]]["sell"]
+        rate = fixerio.latest()["rates"][to.upper()] * float(response["last"])
     else:
-        rate = response[response.keys()[0]]["sell"]
+        rate = float(json.loads(requests.get(BITSTAMP_TICKER_BASE_URL.format(
+                base=base.lower(), to=to.lower())).text)["last"])
 
     return amount * rate
